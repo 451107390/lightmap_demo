@@ -1,0 +1,413 @@
+{
+    "scene": {
+        "accelerator": true,
+        "vplMaxLength": 7,
+        "vplBias": 0.5,
+        "adaptiveSampling": false
+    },
+    "film": {
+        "type": "hdrfilm",
+        "width": 768,
+        "height": 576,
+        "samples": 16,
+        "file": "../crytek_sponza/scene_path.png"
+    },
+    "integrator": {
+        "type": "path",
+        "maxDepth": 7,
+        "nBootstrap": 1000,
+        "mutationPerPixel": 1
+    },
+    "sampler": {
+        "type": "independent",
+        "sampleCount": 512
+    },
+    "camera": {
+        "type": "perspective",
+        "position": [ 40.0, 35.0, 5.0 ],
+        "lookat": [ 0, 0, 0 ],
+        "up": [ 0, 1.0, 0 ],
+        "width": 768,
+        "height": 576,
+        "fov": 45.0
+    },
+    "texture": {
+        "type": "constant",
+        "name": "m0",
+        "reflectance": [ 0.7, 0.7, 0.7 ]
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "aa",
+        "kd": "m0"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m1",
+        "file": "texture/Sponza_Roof_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:roof1",
+        "kd": "m1"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m2",
+        "file": "texture/Lion_Albedo.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:Material__301",
+        "kd": "m2"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m3",
+        "file": "texture/Background_Albedo.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:Material__299",
+        "kd": "m3"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m4",
+        "file": "texture/Vase_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:vase1",
+        "kd": "m4"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m5",
+        "file": "texture/VasePlant_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:Material__58",
+        "kd": "m5"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m6",
+        "file": "texture/VaseRound_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:vase_round1",
+        "kd": "m6"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m7",
+        "file": "texture/VaseHanging_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:vase_hanging1",
+        "kd": "m7"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m8",
+        "file": "texture/ChainTexture_Albedo.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:chain1",
+        "kd": "m8"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m9",
+        "file": "texture/Sponza_FlagPole_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:flagpole1",
+        "kd": "m9"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m10",
+        "file": "texture/Sponza_Thorn_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:leaf1",
+        "kd": "m10"
+    },
+    "texture": {
+        "type": "constant",
+        "name": "m11",
+        "reflectance": [ 0.400000, 0.400000, 0.400000 ]
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:Material__300",
+        "kd": "m11"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m12",
+        "file": "texture/Sponza_Column_b_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:column_b1",
+        "kd": "m12"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m13",
+        "file": "texture/Sponza_Arch_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:arch1",
+        "kd": "m13"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m14",
+        "file": "texture/Sponza_Column_a_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:column_a1",
+        "kd": "m14"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m15",
+        "file": "texture/Sponza_Floor_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:floor1",
+        "kd": "m15"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m16",
+        "file": "texture/Sponza_Column_c_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:column_c1",
+        "kd": "m16"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m17",
+        "file": "texture/Sponza_Details_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:details1",
+        "kd": "m17"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m18",
+        "file": "texture/Sponza_Ceiling_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:ceiling1",
+        "kd": "m18"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m19",
+        "file": "texture/Sponza_Curtain_Blue_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:fabric_g1",
+        "kd": "m19"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m20",
+        "file": "texture/Sponza_Curtain_Red_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:fabric_c1",
+        "kd": "m20"
+    },
+    "texture": {
+        "type": "image",
+        "name": "m21",
+        "file": "texture/Sponza_Curtain_Green_diffuse.png"
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "sponza:fabric_f1",
+        "kd": "m21"
+    },
+    
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_1.dae",
+        "bsdf": "sponza:roof1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_2.dae",
+        "bsdf": "sponza:Material__301"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_3.dae",
+        "bsdf": "sponza:Material__299"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_4.dae",
+        "bsdf": "sponza:vase1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_5.dae",
+        "bsdf": "sponza:Material__58"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_6.dae",
+        "bsdf": "sponza:vase_round1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_7.dae",
+        "bsdf": "sponza:vase_hanging1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_8.dae",
+        "bsdf": "sponza:chain1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_9.dae",
+        "bsdf": "sponza:flagpole1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_10.dae",
+        "bsdf": "sponza:leaf1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_11.dae",
+        "bsdf": "sponza:Material__300"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_12.dae",
+        "bsdf": "sponza:column_b1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_13.dae",
+        "bsdf": "sponza:arch1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_14.dae",
+        "bsdf": "sponza:column_a1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_15.dae",
+        "bsdf": "sponza:floor1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_16.dae",
+        "bsdf": "sponza:column_c1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_17.dae",
+        "bsdf": "sponza:details1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_18.dae",
+        "bsdf": "sponza:ceiling1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_19.dae",
+        "bsdf": "sponza:fabric_g1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_20.dae",
+        "bsdf": "sponza:fabric_c1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_21.dae",
+        "bsdf": "sponza:fabric_f1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_22.dae",
+        "bsdf": "sponza:fabric_f1"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "scale": [ 0.05, 0.05, 0.05 ],
+        "file": "geometry/mesh_23.dae",
+        "bsdf": "sponza:fabric_c1"
+    },
+    "texture": {
+        "type": "constant",
+        "name": "t4",
+        "reflectance": [ 0, 0, 0 ]
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "Light",
+        "kd": "t4"
+    },
+    "light": {
+        "type": "area",
+        "shape": {
+            "type": "sphere",
+            "center": [ 0, 71.0, 0 ],
+            "radius": 3.0,
+            "bsdf": "Light"
+        },
+        "radiance": [ 5000, 5000, 5000 ]
+    }
+}

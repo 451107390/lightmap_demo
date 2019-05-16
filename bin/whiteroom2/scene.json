@@ -1,0 +1,60 @@
+{
+    "scene": {
+        "accelerator": true,
+        "vplMaxLength": 7,
+        "vplBias": 0.5,
+        "adaptiveSampling": false
+    },
+    "film": {
+        "type": "hdrfilm",
+        "width": 512,
+        "height": 512,
+        "samples": 512,
+        "file": "../whiteroom2/scene_vpl.png"
+    },
+    "integrator": {
+        "type": "path",
+        "bake": true,
+        "maxDepth": 7,
+        "nBootstrap": 1000,
+        "mutationPerPixel" :  1,
+        "nextEvent": true
+    },
+    "sampler": {
+        "type": "independent",
+        "sampleCount": 512
+    },
+    "camera": {
+        "type": "perspective",
+        "position": [ 0, 1.0, 12 ],
+        "u": [ 1.0, 0, 0 ],
+        "v": [ 0, 1.0, 0 ],
+        "w": [ 0, 0, 1 ],
+        "width": 512,
+        "height": 512,
+        "fov": 19.5
+    },
+    "texture": {
+        "type": "constant",
+        "name": "m0",
+        "file": "textures/wood.jpg",
+        "reflectance": [ 0.7, 0.7, 0.7 ]
+    },
+    "bsdf": {
+        "type": "lambertian",
+        "name": "white",
+        "kd": "m0"
+    },
+    "trimesh": {
+        "type": "mesh",
+        "file": "geometry/WhiteRoom.fbx",
+        "assimp": true,
+        "bsdf": "white"
+    },
+    "light": {
+        "type": "distant",
+        "from": [ 0, 2.0, 10.0 ],
+        "to": [ 0, 0, 0 ],
+        "radiance": [ 8.0, 8.0, 8.0 ]
+    }
+}

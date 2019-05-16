@@ -1,0 +1,6 @@
+
+#source file
+AUX_SOURCE_DIRECTORY(. DIR_SRCS)
+
+ADD_EXECUTABLE(lightmap ${DIR_SRCS})
+
