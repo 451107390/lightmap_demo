@@ -7,5 +7,5 @@
 ![crytek_sponza](sample1.png)
 ![whiteroom](sample2.png)
   
-##编译
+## 编译
  已经包含了所有需要的库,直接使用cmake编译即可
